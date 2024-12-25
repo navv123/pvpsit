@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVP Siddhartha Engineering College</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+         /* Previous styles remain */
+         .facility {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .facility:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .facility h3 {
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .facility ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+
+        .facility li {
+            margin: 0.5rem 0;
+            position: relative;
+        }
+
+        .facility li:before {
+            content: "→";
+            position: absolute;
+            left: -1rem;
+            color: #1a237e;
+        }
+        nav {
+            background: #1a237e;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pvpsit_home.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section:nth-child(odd) {
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #1a237e;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h3 {
+            color: #1a237e;
+            margin: 1rem 0;
+        }
+
+        .department {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>PVP Siddhartha Engineering College</h1>
+            <p>Empowering Future Engineers with Quality Education and Innovation</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>PVP Siddhartha Engineering College is committed to academic excellence and innovation in engineering education. We provide state-of-the-art facilities and experienced faculty to nurture the next generation of engineers.</p>
+            
+            <h3>Vision</h3>
+            <p>To be a premier engineering institution that nurtures talent and creates leaders in technology.</p>
+            
+            <h3>Mission</h3>
+            <p>Providing quality education through innovative teaching methods and industry collaboration.</p>
+        </div>
+    </section>
+
+    <section id="departments">
+        <div class="container">
+            <h2>Our Departments</h2>
+            
+            <div class="department">
+                <h3>Computer Science Engineering</h3>
+                <p>Offering cutting-edge education in software development, artificial intelligence, and data science.</p>
+                <p>Key Features: Advanced Computer Labs, AI & Machine Learning Lab, Industry Partnerships</p>
+            </div>
+
+            <div class="department">
+                <h3>Electronics & Communication Engineering</h3>
+                <p>Specializing in embedded systems, communication technologies, and electronic design.</p>
+                <p>Key Features: Digital Signal Processing Lab, VLSI Design Center, IoT Research Facility</p>
+            </div>
+
+            <div class="department">
+                <h3>Mechanical Engineering</h3>
+                <p>Comprehensive training in design, manufacturing, and thermal systems.</p>
+                <p>Key Features: CAD/CAM Laboratory, Robotics Center, Workshop Facilities</p>
+            </div>
+
+            <div class="department">
+                <h3>Civil Engineering</h3>
+                <p>Expertise in structural design, construction technology, and environmental engineering.</p>
+                <p>Key Features: Structural Engineering Lab, Environmental Engineering Lab, Material Testing Facility</p>
+            </div>
+        </div>
+    </section>
+    <section id="facilities">
+        <div class="container">
+            <h2>Campus Facilities</h2>
+            
+            <div class="facility">
+                <h3>Central Library</h3>
+                <ul>
+                    <li>Over 50,000 volumes of books and journals</li>
+                    <li>Digital library with online resources</li>
+                    <li>Quiet study areas and discussion rooms</li>
+                    <li>24/7 access during exam periods</li>
+                </ul>
+            </div>
+
+            <div class="facility">
+                <h3>Research Centers</h3>
+                <ul>
+                    <li>Advanced Computing Research Lab</li>
+                    <li>Innovation and Incubation Center</li>
+                    <li>Industry-sponsored research facilities</li>
+                    <li>Project development workspaces</li>
+                </ul>
+            </div>
+
+            <div class="facility">
+                <h3>Sports Complex</h3>
+                <ul>
+                    <li>Indoor sports arena</li>
+                    <li>Olympic-size swimming pool</li>
+                    <li>Cricket ground and football field</li>
+                    <li>Modern gymnasium</li>
+                </ul>
+            </div>
+
+            <div class="facility">
+                <h3>Student Amenities</h3>
+                <ul>
+                    <li>Wi-Fi enabled campus</li>
+                    <li>Modern cafeteria</li>
+                    <li>Medical center</li>
+                    <li>Transportation facilities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@pvpsiddhartha.ac.in</p>
+        <p>Phone: +91 1234567890</p>
+        <p>Address: Vijayawada, Andhra Pradesh</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
